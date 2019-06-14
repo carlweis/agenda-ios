@@ -12,12 +12,11 @@ struct TasksView : View {
   
   var tasks: [Task] = [Task]()
   var body: some View {
-    List(tasks) { task in
-      HStack {
-        Image(systemName: "checkmark.circle")
-        Text(task.name)
-          .font(.headline)
+    NavigationView {
+      List(tasks) { task in
+        TaskCell(task: task)
       }
+      .navigationBarTitle(Text("Agenda"))
     }
   }
 }
@@ -29,3 +28,16 @@ struct TasksView_Previews : PreviewProvider {
   }
 }
 #endif
+
+struct TaskCell : View {
+  var task: Task
+    var body: some View {
+      return NavigationButton(destination: Text(task.name)) {
+          HStack {
+            Image(systemName: "checkmark.circle")
+            Text(task.name)
+              .font(.headline)
+          }
+      }
+    }
+}
