@@ -16,7 +16,6 @@
 		C3AAFF8022B3192500C7506A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3AAFF7E22B3192500C7506A /* LaunchScreen.storyboard */; };
 		C3AAFF8B22B3192500C7506A /* AgendaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AAFF8A22B3192500C7506A /* AgendaTests.swift */; };
 		C3AAFF9622B3192500C7506A /* AgendaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AAFF9522B3192500C7506A /* AgendaUITests.swift */; };
-		C3AAFFA922B319CC00C7506A /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AAFFA822B319CC00C7506A /* Project.swift */; };
 		C3AAFFAB22B31A6700C7506A /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AAFFAA22B31A6700C7506A /* Task.swift */; };
 		C3AAFFAD22B31B4400C7506A /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AAFFAC22B31B4400C7506A /* Priority.swift */; };
 /* End PBXBuildFile section */
@@ -54,7 +53,6 @@
 		C3AAFF9122B3192500C7506A /* AgendaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgendaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3AAFF9522B3192500C7506A /* AgendaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaUITests.swift; sourceTree = "<group>"; };
 		C3AAFF9722B3192500C7506A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C3AAFFA822B319CC00C7506A /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		C3AAFFAA22B31A6700C7506A /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		C3AAFFAC22B31B4400C7506A /* Priority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Priority.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,7 +143,6 @@
 		C3AAFFA322B3192F00C7506A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				C3AAFFA822B319CC00C7506A /* Project.swift */,
 				C3AAFFAA22B31A6700C7506A /* Task.swift */,
 				C3AAFFAC22B31B4400C7506A /* Priority.swift */,
 			);
@@ -323,7 +320,6 @@
 				C3AAFF7122B3192300C7506A /* AppDelegate.swift in Sources */,
 				C3AAFFAD22B31B4400C7506A /* Priority.swift in Sources */,
 				C3AAFF7822B3192300C7506A /* TasksView.swift in Sources */,
-				C3AAFFA922B319CC00C7506A /* Project.swift in Sources */,
 				C3AAFFAB22B31A6700C7506A /* Task.swift in Sources */,
 				C3AAFF7322B3192300C7506A /* SceneDelegate.swift in Sources */,
 			);

@@ -9,16 +9,23 @@
 import SwiftUI
 
 struct TasksView : View {
-    var body: some View {
-        Text("Agenda")
-          .font(.title)
+  
+  var tasks: [Task] = [Task]()
+  var body: some View {
+    List(tasks) { task in
+      HStack {
+        Image(systemName: "checkmark.circle")
+        Text(task.name)
+          .font(.headline)
+      }
     }
+  }
 }
 
 #if DEBUG
 struct TasksView_Previews : PreviewProvider {
-    static var previews: some View {
-        TasksView()
-    }
+  static var previews: some View {
+    TasksView(tasks: taskTestData)
+  }
 }
 #endif

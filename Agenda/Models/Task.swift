@@ -9,12 +9,30 @@
 import SwiftUI
 
 struct Task: Identifiable {
-  var id: UUID = UUID()
-  var projectId: UUID
+  var id: UUID = UUID()  
   var name: String
   var description: String?
-  var dueDate: Date
+  var dueDate: Date?
   var isCompleted: Bool = false
-  var assignedTo: String
+  var assignedTo: String?
   var priority: Priority
 }
+
+let taskTestData = [
+  Task(
+    name: "Design User Interface",
+    priority: Priority.high
+  ),
+  Task(
+    name: "Write model logic",
+    priority: Priority.medium
+  ),
+  Task(
+    name: "Write Unit Tests",
+    priority: Priority.low
+  ),
+  Task(
+    name: "Add logging",
+    priority: Priority.medium
+  ),
+]
