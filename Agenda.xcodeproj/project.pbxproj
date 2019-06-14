@@ -10,12 +10,15 @@
 		C3AAFF7122B3192300C7506A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AAFF7022B3192300C7506A /* AppDelegate.swift */; };
 		C3AAFF7322B3192300C7506A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AAFF7222B3192300C7506A /* SceneDelegate.swift */; };
 		C3AAFF7622B3192300C7506A /* Agenda.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3AAFF7422B3192300C7506A /* Agenda.xcdatamodeld */; };
-		C3AAFF7822B3192300C7506A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AAFF7722B3192300C7506A /* ContentView.swift */; };
+		C3AAFF7822B3192300C7506A /* TasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AAFF7722B3192300C7506A /* TasksView.swift */; };
 		C3AAFF7A22B3192500C7506A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3AAFF7922B3192500C7506A /* Assets.xcassets */; };
 		C3AAFF7D22B3192500C7506A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3AAFF7C22B3192500C7506A /* Preview Assets.xcassets */; };
 		C3AAFF8022B3192500C7506A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3AAFF7E22B3192500C7506A /* LaunchScreen.storyboard */; };
 		C3AAFF8B22B3192500C7506A /* AgendaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AAFF8A22B3192500C7506A /* AgendaTests.swift */; };
 		C3AAFF9622B3192500C7506A /* AgendaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AAFF9522B3192500C7506A /* AgendaUITests.swift */; };
+		C3AAFFA922B319CC00C7506A /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AAFFA822B319CC00C7506A /* Project.swift */; };
+		C3AAFFAB22B31A6700C7506A /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AAFFAA22B31A6700C7506A /* Task.swift */; };
+		C3AAFFAD22B31B4400C7506A /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AAFFAC22B31B4400C7506A /* Priority.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +43,7 @@
 		C3AAFF7022B3192300C7506A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3AAFF7222B3192300C7506A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C3AAFF7522B3192300C7506A /* Agenda.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Agenda.xcdatamodel; sourceTree = "<group>"; };
-		C3AAFF7722B3192300C7506A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C3AAFF7722B3192300C7506A /* TasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksView.swift; sourceTree = "<group>"; };
 		C3AAFF7922B3192500C7506A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3AAFF7C22B3192500C7506A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C3AAFF7F22B3192500C7506A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +54,9 @@
 		C3AAFF9122B3192500C7506A /* AgendaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgendaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3AAFF9522B3192500C7506A /* AgendaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaUITests.swift; sourceTree = "<group>"; };
 		C3AAFF9722B3192500C7506A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3AAFFA822B319CC00C7506A /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		C3AAFFAA22B31A6700C7506A /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		C3AAFFAC22B31B4400C7506A /* Priority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Priority.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +107,11 @@
 		C3AAFF6F22B3192300C7506A /* Agenda */ = {
 			isa = PBXGroup;
 			children = (
-				C3AAFF7022B3192300C7506A /* AppDelegate.swift */,
-				C3AAFF7222B3192300C7506A /* SceneDelegate.swift */,
-				C3AAFF7722B3192300C7506A /* ContentView.swift */,
-				C3AAFF7922B3192500C7506A /* Assets.xcassets */,
-				C3AAFF7E22B3192500C7506A /* LaunchScreen.storyboard */,
-				C3AAFF8122B3192500C7506A /* Info.plist */,
-				C3AAFF7422B3192300C7506A /* Agenda.xcdatamodeld */,
-				C3AAFF7B22B3192500C7506A /* Preview Content */,
+				C3AAFFA622B3194400C7506A /* App */,
+				C3AAFFA522B3193E00C7506A /* Controllers */,
+				C3AAFFA322B3192F00C7506A /* Models */,
+				C3AAFFA722B3194A00C7506A /* Resources */,
+				C3AAFFA422B3193900C7506A /* Views */,
 			);
 			path = Agenda;
 			sourceTree = "<group>";
@@ -137,6 +140,52 @@
 				C3AAFF9722B3192500C7506A /* Info.plist */,
 			);
 			path = AgendaUITests;
+			sourceTree = "<group>";
+		};
+		C3AAFFA322B3192F00C7506A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C3AAFFA822B319CC00C7506A /* Project.swift */,
+				C3AAFFAA22B31A6700C7506A /* Task.swift */,
+				C3AAFFAC22B31B4400C7506A /* Priority.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C3AAFFA422B3193900C7506A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C3AAFF7B22B3192500C7506A /* Preview Content */,
+				C3AAFF7722B3192300C7506A /* TasksView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C3AAFFA522B3193E00C7506A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C3AAFFA622B3194400C7506A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C3AAFF7022B3192300C7506A /* AppDelegate.swift */,
+				C3AAFF7222B3192300C7506A /* SceneDelegate.swift */,
+				C3AAFF7E22B3192500C7506A /* LaunchScreen.storyboard */,
+				C3AAFF8122B3192500C7506A /* Info.plist */,
+				C3AAFF7422B3192300C7506A /* Agenda.xcdatamodeld */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C3AAFFA722B3194A00C7506A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C3AAFF7922B3192500C7506A /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,7 +321,10 @@
 			files = (
 				C3AAFF7622B3192300C7506A /* Agenda.xcdatamodeld in Sources */,
 				C3AAFF7122B3192300C7506A /* AppDelegate.swift in Sources */,
-				C3AAFF7822B3192300C7506A /* ContentView.swift in Sources */,
+				C3AAFFAD22B31B4400C7506A /* Priority.swift in Sources */,
+				C3AAFF7822B3192300C7506A /* TasksView.swift in Sources */,
+				C3AAFFA922B319CC00C7506A /* Project.swift in Sources */,
+				C3AAFFAB22B31A6700C7506A /* Task.swift in Sources */,
 				C3AAFF7322B3192300C7506A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,10 +491,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "Agenda/Preview\\ Content";
+				DEVELOPMENT_ASSET_PATHS = "Agenda/Views/Preview\\ Content";
 				DEVELOPMENT_TEAM = S52HKPC4TS;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Agenda/Info.plist;
+				INFOPLIST_FILE = Agenda/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,10 +511,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "Agenda/Preview\\ Content";
+				DEVELOPMENT_ASSET_PATHS = "Agenda/Views/Preview\\ Content";
 				DEVELOPMENT_TEAM = S52HKPC4TS;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Agenda/Info.plist;
+				INFOPLIST_FILE = Agenda/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
