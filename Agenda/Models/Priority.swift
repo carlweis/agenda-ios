@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Priority {
+enum Priority: Int {
   case high
   case medium
   case low

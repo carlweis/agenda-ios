@@ -9,14 +9,41 @@
 import SwiftUI
 
 struct TasksView : View {
+  @State var showNewTaskModal = false
   
   var tasks: [Task] = [Task]()
   var body: some View {
     NavigationView {
+      
+      // DateView
+      HStack(alignment: .firstTextBaseline) {
+        Text(DateHelper.today(style: DateFormatter.Style.medium))
+          .font(.headline)
+          .foregroundColor(.secondary)
+          .padding([.horizontal], 18)
+        Spacer()
+      }
+      
+      // Task List
       List(tasks) { task in
         TaskCell(task: task)
       }
+        
+      // Navigation Title
       .navigationBarTitle(Text("Agenda"))
+      
+      // Plus Button
+      HStack(alignment: .center) {
+        
+        PresentationButton(
+          Image(systemName: "plus.circle")
+            .font(.system(size: 40))
+            .padding(.vertical)
+          , destination: Text("New Task Form")
+        )
+        
+        
+      }
     }
   }
 }
@@ -34,9 +61,9 @@ struct TaskCell : View {
     var body: some View {
       return NavigationButton(destination: Text(task.name)) {
           HStack {
-            Image(systemName: "checkmark.circle")
+            Image(systemName: task.icon)
             Text(task.name)
-              .font(.headline)
+              .font(.headline)            
           }
       }
     }

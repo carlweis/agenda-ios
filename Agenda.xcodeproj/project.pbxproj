@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C32564D222B4818B003E26B7 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32564D122B4818B003E26B7 /* DateHelper.swift */; };
 		C3AAFF7122B3192300C7506A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AAFF7022B3192300C7506A /* AppDelegate.swift */; };
 		C3AAFF7322B3192300C7506A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AAFF7222B3192300C7506A /* SceneDelegate.swift */; };
 		C3AAFF7622B3192300C7506A /* Agenda.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3AAFF7422B3192300C7506A /* Agenda.xcdatamodeld */; };
@@ -18,6 +19,7 @@
 		C3AAFF9622B3192500C7506A /* AgendaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AAFF9522B3192500C7506A /* AgendaUITests.swift */; };
 		C3AAFFAB22B31A6700C7506A /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AAFFAA22B31A6700C7506A /* Task.swift */; };
 		C3AAFFAD22B31B4400C7506A /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3AAFFAC22B31B4400C7506A /* Priority.swift */; };
+		C3DA191422B33BAB0003D203 /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DA191322B33BAA0003D203 /* Symbols.swift */; };
 		E37CBAB122B334FD00E4266A /* Agneda.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37CBAB022B334FD00E4266A /* Agneda.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C32564D122B4818B003E26B7 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		C3AAFF6D22B3192300C7506A /* Agenda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Agenda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3AAFF7022B3192300C7506A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3AAFF7222B3192300C7506A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +59,7 @@
 		C3AAFF9722B3192500C7506A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3AAFFAA22B31A6700C7506A /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		C3AAFFAC22B31B4400C7506A /* Priority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Priority.swift; sourceTree = "<group>"; };
+		C3DA191322B33BAA0003D203 /* Symbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbols.swift; sourceTree = "<group>"; };
 		E37CBAB022B334FD00E4266A /* Agneda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agneda.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +88,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C32564D022B48165003E26B7 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				C32564D122B4818B003E26B7 /* DateHelper.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
 		C3AAFF6422B3192300C7506A = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +122,7 @@
 				C3AAFFA622B3194400C7506A /* App */,
 				C3AAFFA522B3193E00C7506A /* Controllers */,
 				C3AAFFA322B3192F00C7506A /* Models */,
+				C32564D022B48165003E26B7 /* Library */,
 				C3AAFFA722B3194A00C7506A /* Resources */,
 				C3AAFFA422B3193900C7506A /* Views */,
 			);
@@ -148,6 +161,7 @@
 				C3AAFFAA22B31A6700C7506A /* Task.swift */,
 				C3AAFFAC22B31B4400C7506A /* Priority.swift */,
 				E37CBAB022B334FD00E4266A /* Agneda.swift */,
+				C3DA191322B33BAA0003D203 /* Symbols.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -320,10 +334,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3AAFF7622B3192300C7506A /* Agenda.xcdatamodeld in Sources */,
+				C3DA191422B33BAB0003D203 /* Symbols.swift in Sources */,
 				C3AAFF7122B3192300C7506A /* AppDelegate.swift in Sources */,
 				C3AAFFAD22B31B4400C7506A /* Priority.swift in Sources */,
 				C3AAFF7822B3192300C7506A /* TasksView.swift in Sources */,
 				E37CBAB122B334FD00E4266A /* Agneda.swift in Sources */,
+				C32564D222B4818B003E26B7 /* DateHelper.swift in Sources */,
 				C3AAFFAB22B31A6700C7506A /* Task.swift in Sources */,
 				C3AAFF7322B3192300C7506A /* SceneDelegate.swift in Sources */,
 			);
